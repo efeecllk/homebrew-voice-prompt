@@ -1,6 +1,6 @@
 cask "voice-prompt" do
   version "0.1.1"
-  sha256 "97c2462930b8488600ea41ed914b50b0e0190ec561e64e56053a2de779e6c862"
+  sha256 "0feb9fbf697929689a7209097098d2ec83c2b6d5e1e4d10f899c0c42e0b8e0fb"
 
   url "https://github.com/efeecllk/voice-prompt/releases/download/v#{version}/Voice.Prompt_#{version}_aarch64.dmg"
   name "Voice Prompt"
