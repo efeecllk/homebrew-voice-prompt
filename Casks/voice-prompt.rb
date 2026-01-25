@@ -1,19 +1,20 @@
 cask "voice-prompt" do
-  version "0.1.1"
-  sha256 "280b60105a469193d08f88227f693c49a9f53d22725c00770b80ddfb39064169"
+  arch arm: "aarch64", intel: "x64"
 
-  url "https://github.com/efeecllk/voice-prompt/releases/download/v#{version}/Voice.Prompt_#{version}_aarch64.dmg"
+  version "0.2.0"
+  sha256 arm:   "e9761133ea8e46a562b14efe33f04bd1af5797d1690d3aee16f1145c975280e2",
+         intel: "5139cfda788e3c69fa2e31a293117b3ccc6b966313d786af8a9f976c817ca642"
+
+  url "https://github.com/efeecllk/voice-prompt/releases/download/v#{version}/Voice.Prompt_#{version}_#{arch}.dmg"
   name "Voice Prompt"
   desc "Lightweight macOS menu bar app for speech-to-text translation"
   homepage "https://github.com/efeecllk/voice-prompt"
 
   depends_on macos: ">= :catalina"
-  depends_on arch: :arm64
 
   app "Voice Prompt.app"
 
   postflight do
-    # Remove quarantine attribute to allow running unsigned app
     system_command "/usr/bin/xattr",
                    args: ["-cr", "#{appdir}/Voice Prompt.app"],
                    sudo: false
