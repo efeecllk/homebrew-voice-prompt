@@ -1,9 +1,9 @@
 cask "voice-prompt" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.2.0"
-  sha256 arm:   "e9761133ea8e46a562b14efe33f04bd1af5797d1690d3aee16f1145c975280e2",
-         intel: "5139cfda788e3c69fa2e31a293117b3ccc6b966313d786af8a9f976c817ca642"
+  version "0.3.0"
+  sha256 arm:   "caa057abd1518fe7a2605cf6d398263d5cd1998a35a35a418b017b2bb26171ae",
+         intel: "f775d2f2e60884ac3955c3e78b731fdd3363240c8370023d12d37e0497547b36"
 
   url "https://github.com/efeecllk/voice-prompt/releases/download/v#{version}/Voice.Prompt_#{version}_#{arch}.dmg"
   name "Voice Prompt"
