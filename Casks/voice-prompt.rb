@@ -10,8 +10,6 @@ cask "voice-prompt" do
   desc "Lightweight macOS menu bar app for speech-to-text translation"
   homepage "https://github.com/efeecllk/voice-prompt"
 
-  depends_on macos: :catalina
-
   app "Voice Prompt.app"
 
   postflight do
